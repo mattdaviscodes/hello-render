@@ -2,63 +2,46 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Container from "./Container";
 
 const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="p-4">
-      <ul className="flex space-x-4 justify-end">
-        <li>
-          <Link
-            href="/"
-            className={`text-lg ${pathname === "/" ? "text-amber-500" : ""}`}
-          >
-            Hello
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/about"
-            className={`text-lg ${
-              pathname === "/about" ? "text-amber-500" : ""
-            }`}
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/why-da"
-            className={`text-lg ${
-              pathname === "/why-da" ? "text-amber-500" : ""
-            }`}
-          >
-            Why DA?
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/why-render"
-            className={`text-lg ${
-              pathname === "/why-render" ? "text-amber-500" : ""
-            }`}
-          >
-            Why Render?
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/blog"
-            className={`text-lg ${
-              pathname === "/blog" ? "text-amber-500" : ""
-            }`}
-          >
-            Blog
-          </Link>
-        </li>
-      </ul>
-    </nav>
+    <Container>
+      <nav className="p-6">
+        <ul className="flex justify-end space-x-4">
+          <li>
+            <Link
+              href="/"
+              className={`text-lg ${pathname === "/" ? "text-amber-500" : ""}`}
+            >
+              Hello
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/why"
+              className={`text-lg ${
+                pathname === "/why" ? "text-amber-500" : ""
+              }`}
+            >
+              Why
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/blog"
+              className={`text-lg ${
+                pathname.includes("blog") ? "text-amber-500" : ""
+              }`}
+            >
+              Blog
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </Container>
   );
 };
 
