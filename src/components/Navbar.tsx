@@ -31,7 +31,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              href="/blog"
+              href="/blog/deploy-static-site-to-render"
               className={`text-lg ${
                 pathname.includes("blog") ? "text-amber-500" : ""
               }`}

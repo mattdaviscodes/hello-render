@@ -88,7 +88,7 @@ const AboutPage: React.FC = () => {
               </p>
             </div>
           </div>
-          <Link href="/blog">
+          <Link href="/blog/deploy-static-site-to-render">
             <div className="w-fit rounded-full bg-amber-500 px-16 py-3 text-5xl text-white">
               See a writing sample ➡
             </div>
