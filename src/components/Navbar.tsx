@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <Container>
-      <nav className="border-b-2 pb-4 pt-6">
+      <nav className="border-b-2 pb-4 pt-6 sm:border-none">
         <ul className="flex justify-between text-2xl sm:justify-end sm:space-x-8">
           <li>
             <Link
