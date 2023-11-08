@@ -38,8 +38,8 @@ const BlogPage: React.FC<{ params: Props }> = async ({ params }) => {
 
   return (
     <Container>
-      <div className="flex justify-center">
-        <Markdown className="prose prose-xl prose-headings:text-amber-500 prose-a:text-amber-500 prose-a:no-underline hover:prose-a:underline prose-li:my-0">
+      <div className="flex justify-center mt-8 lg:mt-16">
+        <Markdown className="prose prose-sm lg:prose-lg xl:prose-xl prose-headings:text-amber-500 prose-a:text-amber-500 prose-a:no-underline hover:prose-a:underline prose-li:my-0">
           {contentWithCorrectedLinks}
         </Markdown>
       </div>

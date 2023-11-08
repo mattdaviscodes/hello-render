@@ -1,186 +1,108 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import Container from "@/components/Container";
-import Link from "next/link";
 
 const AboutPage: React.FC = () => {
   return (
     <>
       <Container>
-        <h1 className="my-8 text-6xl font-bold text-amber-500">Why Hire Me?</h1>
+        <h1 className="my-8 text-4xl font-bold text-amber-500 sm:text-6xl">
+          Why Hire Me?
+        </h1>
       </Container>
 
-      <div className="my-4 border-y-4 border-amber-500 bg-orange-100 p-8">
+      <div className="border-y-4 border-amber-500 bg-orange-100 py-4 sm:p-8">
         <Container>
-          <div className="flex items-center justify-between">
-            <div className="mx-4 flex grow basis-0 flex-col items-center rounded-xl bg-white py-8">
-              <p className="pb-4 text-8xl">👨‍💻</p>
-              <p className="text-2xl">Software Engineer</p>
-            </div>
-            <p className="pb-4 text-4xl">+</p>
-            <div className="mx-4 flex grow basis-0 flex-col items-center rounded-xl bg-white py-8">
-              <p className="pb-4 text-8xl">✍️</p>
-              <p className="text-2xl">Writer</p>
-            </div>
-            <p className="pb-4 text-4xl">+</p>
-            <div className="mx-4 flex grow basis-0 flex-col items-center rounded-xl bg-white py-8">
-              <p className="pb-4 text-8xl">❤️</p>
-              <p className="text-2xl">People Person</p>
-            </div>
-            <p className="pb-4 text-4xl">=</p>
-            <div className="mx-4 flex grow basis-0 flex-col items-center rounded-xl bg-white py-8">
-              <p className="pb-4 text-8xl">🥑</p>
-              <p className="text-2xl">Developer Advocate</p>
+          <div className="flex justify-center">
+            <div className="flex items-center justify-between w-full max-w-6xl">
+              <div className="flex h-16 w-16 flex-col items-center justify-center rounded-xl bg-white sm:h-24 sm:w-24 md:h-48 md:w-32 lg:w-44">
+                <p className="p-2 text-2xl sm:text-5xl md:pb-4 md:text-6xl">
+                  👨‍💻
+                </p>
+                <p className="hidden text-center md:block md:text-2xl">
+                  Software Engineer
+                </p>
+              </div>
+              <p className="text-2xl sm:text-4xl lg:text-6xl">+</p>
+              <div className="flex h-16 w-16 flex-col items-center justify-center rounded-xl bg-white sm:h-24 sm:w-24 md:h-48 md:w-32 lg:w-44">
+                <p className="p-2 text-2xl sm:text-5xl md:pb-4 md:text-6xl">
+                  ✍️
+                </p>
+                <p className="hidden text-center md:block md:text-2xl">
+                  Writer
+                </p>
+              </div>
+              <p className="text-2xl sm:text-4xl lg:text-6xl">+</p>
+              <div className="flex h-16 w-16 flex-col items-center justify-center rounded-xl bg-white sm:h-24 sm:w-24 md:h-48 md:w-32 lg:w-44">
+                <p className="p-2 text-2xl sm:text-5xl md:pb-4 md:text-6xl">
+                  ❤️
+                </p>
+                <p className="hidden text-center md:block md:text-2xl">
+                  People Person
+                </p>
+              </div>
+              <p className="text-2xl sm:text-4xl lg:text-6xl">=</p>
+              <div className="flex h-16 w-16 flex-col items-center justify-center rounded-xl bg-white sm:h-24 sm:w-24 md:h-48 md:w-32 lg:w-44">
+                <p className="p-2 text-2xl sm:text-5xl md:pb-4 md:text-6xl">
+                  🥑
+                </p>
+                <p className="hidden text-center md:block md:text-2xl">
+                  Developer Advocate
+                </p>
+              </div>
             </div>
           </div>
         </Container>
       </div>
 
       <Container>
-        <div className="flex flex-col items-center">
-          <div className="mt-4 mb-40 flex justify-between">
-            <div className="my-4 mx-10">
-              <h2 className="mb-4 text-center text-4xl text-amber-500">
-                Software Engineer
+        <div className="flex flex-col items-center text-center">
+          <div className="my-4 justify-center gap-10 md:flex md:flex-wrap lg:grid lg:grid-cols-3">
+            <div className="lg:col-span-1">
+              <h2 className="mb-4 mt-10 text-center text-3xl text-amber-500 sm:text-4xl">
+                <span className="pr-2 md:hidden">👨‍💻</span>Software Engineer
               </h2>
-              <p className="text-lg">
-                With six years of professional experience as a full-stack
-                software engineer, I'm well-versed in the language of code and
-                the art of problem-solving. My time at SpaceX reinforced my
-                ability to thrive in the most demanding engineering
-                environments, proving my capacity to excel in hardcore
-                engineering teams. Adapting to diverse industries throughout my
-                career has sharpened my skill of quickly embracing new
-                technologies and paradigms. As a Developer Advocate, I bring
-                this technical depth to understand and address the unique
-                challenges faced by developers.
+              <p className="text-base sm:text-lg">
+                For someone to advocate for developers, they must understand
+                what it means to work be a developer. They must have lived
+                the struggle of trying to deliver a best-in-class product on
+                short deadlines with substandard tooling. I have six years of
+                professional experience as a full-stack software engineer, most
+                recently at SpaceX. I want to use this technical depth to help
+                developers succeed despite the pressures of their industry.
               </p>
             </div>
-            <div className="my-4 mx-10">
-              <h2 className="mb-4 text-center text-4xl text-amber-500">
-                Writer
+            <div className="lg:col-span-1">
+              <h2 className="mb-4 mt-10 text-center text-3xl text-amber-500 sm:text-4xl">
+                <span className="pr-2 md:hidden">✍️</span>Writer
               </h2>
-              <p className="text-lg">
-                My creative writing degree, coupled with my early-career
-                experience in web copywriting and my continuous passion for
-                personal writing, converge to make me a versatile and adept
-                communicator. Whether it's crafting technical documentation,
-                blog posts, or any form of content, I bring a dedication to
-                clarity and precision in language. I embrace the art of
-                storytelling as a powerful means to connect with audiences, and
-                I'm equally comfortable weaving narratives in code or prose.
+              <p className="text-base sm:text-lg">
+                I have a non-standard background for a software engineer. I have
+                a degree in creative writing, and I spent the
+                beginning of my career writing and editing for the web. The
+                skills I learned in school and at work have been foundational in
+                my career, allowing me to communicate effectively regardless of
+                topic or setting, and I feel as comfortable discussing details
+                with teammates as I do broad strokes with stakeholders.
               </p>
             </div>
-            <div className="my-4 mx-10">
-              <h2 className="mb-4 text-center text-4xl text-amber-500">
-                People Person
+            <div className="lg:col-span-1">
+              <h2 className="mb-4 mt-10 text-center text-3xl text-amber-500 sm:text-4xl">
+                <span className="pr-2 md:hidden">❤️</span>People Person
               </h2>
-              <p className="text-lg">
-                My compassion for others drives my commitment to improving
-                developer experiences. Having navigated jobs and tools with
-                subpar developer experiences, I'm inspired to use those
-                experiences as lessons to enhance the lives of developers
-                everywhere. I recognize that the most effective way to be heard
-                and drive change is by meeting people where they are,
-                understanding their needs, and collaborating to find solutions.
-                As a Developer Advocate, I'm passionate about creating spaces
-                where developers feel valued, understood, and empowered.
+              <p className="text-base sm:text-lg">
+                A great communicator must have the compassion to meet others
+                where they are. The prose we write and the words we say mean
+                nothing if the recipient is not considered. I care deeply about
+                the experience of those around me. I want to raise all ships, to
+                bring people in, to pay forward the support I've received
+                throughout my career. I want to help developers feel great in
+                their work, and I believe I have the skill and empathy to do it.
               </p>
             </div>
           </div>
-          <Link href="/blog/deploy-static-site-to-render">
-            <div className="w-fit rounded-full bg-amber-500 px-16 py-3 text-5xl text-white">
-              See a writing sample ➡
-            </div>
-          </Link>
         </div>
       </Container>
-
-      {/* <div className="mb-4 border-y-4 border-amber-500 bg-orange-100 p-8">
-        <Container>
-          <div className="flex items-center justify-between">
-            <div>
-              <h2 className="mb-4 text-4xl text-amber-500">tl;dr</h2>
-              <ul className="list-disc">
-                <li>
-                  Eight years of professional full stack software engineering
-                  experience.
-                </li>
-                <li>
-                  Worked in several industries, most recently aerospace with
-                  SpaceX.
-                </li>
-                <li>Considering a pivot into developer advocacy.</li>
-                <li>Communicator, constant learner, people person.</li>
-                <li>Pretty nice guy.</li>
-              </ul>
-            </div>
-            <Image
-              src="/avatar.png"
-              alt="Avatar of Matt Davis"
-              width={300}
-              height={300}
-            ></Image>
-          </div>
-        </Container>
-      </div> */}
-
-      {/* <Container>
-        <section>
-          <h2 className="mb-4 text-4xl text-amber-500">My Journey</h2>
-          <p className="mb-4">
-            I've spent the last eight years as a full stack software engineer,
-            working in gaming, fitness, and most recently aerospace. I've worked
-            with all the popular web technologies, and some of the less popular
-            ones. I've worked on tiny projects like in-house tooling for local
-            small businesses and very large ones, like the Starlink.com
-            platform, which currently supports nearly two million customers.
-          </p>
-          <p className="mb-4">
-            Throughout my career, I've prided myself on my communication skills.
-            Given my background, I feel uniquely positioned for inter-team
-            communication.
-          </p>
-          <p className="mb-4">
-            I have a non-technical background -- my undergraduate degree is in
-            creative writing -- so I'm self-taught. I'm proud of the work I've
-            done to build my career, but I've spent most of it worrying that my
-            lack of formal education would hold me back.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="mb-4 text-4xl text-amber-500">
-            Why Developer Advocacy?
-          </h2>
-          <p className="mb-4">Tough question! Thanks for asking.</p>
-          <p className="mb-4">
-            SpaceX was my dream job. It's the reason I learned to code. Shortly
-            after graduating in 2012, I was writing web content for a higher
-            education lead generation company. I was unhappy with the work and
-            my prospects. I started learning to code for fun
-          </p>
-        </section>
-
-        <section>
-          <h2 className="mb-4 text-4xl text-amber-500">Why Render?</h2>
-          <p className="mb-4">
-            In short, I think the product is really cool! I've enjoyed making
-            this site as a reason to experiment with Render's tooling. I've used
-            Heroku for personal projects, and the larger cloud providers at work
-          </p>
-        </section>
-
-        <section>
-          <h2 className="mb-4 text-4xl text-amber-500">Why Hire Me?</h2>
-          <p className="mb-4">
-            I believe I am uniquely positioned to fill this role. My engineering
-            experience gives me insight into what real developers face in their
-            daily work. I'm a solid communicator who is comfortable speaking in
-            public a
-          </p>
-        </section>
-      </Container> */}
     </>
   );
 };
